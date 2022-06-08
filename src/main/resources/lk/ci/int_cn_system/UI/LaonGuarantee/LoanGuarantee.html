@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;GENERATE_GETTERS&quot;:false,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;mytheme&quot;}">
+  <meta name="vaadin-version" content="7.7.7">
+ </head>
+ <body>
+  <vaadin-absolute-layout>
+   <vaadin-label style-name="large bold" size-auto plain-text :top="17px" :left="24px">
+     Loan Guarantee 
+   </vaadin-label>
+   <vaadin-panel width="1055px" height="505px" :top="58px" :left="24px">
+    <vaadin-absolute-layout height="737px">
+    
+     <vaadin-label style-name="small bold" size-auto plain-text :top="10px" :left="21px">
+       Product Name 
+     </vaadin-label>
+     <vaadin-label style-name="small" size-auto plain-text :top="10px" :left="135px">
+       COOP Shakthi Cooperative Micro Insurance 
+     </vaadin-label>
+     
+     <vaadin-text-field required-error="Required !" caption="Initial Name" style-name="small" width="313px" _id="txtApplicantInitName" :top="62px" :left="21px"></vaadin-text-field>
+     <vaadin-text-field required-error="Required !" caption="Last Name" style-name="small" width="311px" _id="txtApplicantLastName" :top="62px" :left="348px"></vaadin-text-field>
+     <vaadin-text-field caption="NIC" style-name="small" width="150px" _id="txtNIC" :top="62px" :left="672px"></vaadin-text-field>
+     
+     <vaadin-text-field caption="Address No" style-name="small" width="134px" _id="txtCusAddressNo" :top="129px" :left="21px"></vaadin-text-field>
+     <vaadin-text-field caption="Street" style-name="small" width="369px" _id="txtCusStreet" :top="129px" :left="171px"></vaadin-text-field>
+     <vaadin-text-field caption="Area" style-name="small" width="183px" _id="txtCusArea" :top="129px" :left="558px"></vaadin-text-field>
+     <vaadin-combo-box required-error="City Required" caption="City" required style-name="small" width="296px" _id="comboCusCity" :top="196px" :left="21px">
+      <option>Option 1</option>
+      <option>Option 2</option>
+      <option>Option 3</option>
+     </vaadin-combo-box>
+     
+     <vaadin-date-field caption="Date of Birth" date-format="dd-MMM-yyyy" style-name="small" width="150px" _id="dateDOB" :top="265px" :left="21px"></vaadin-date-field>
+     <vaadin-text-field required-error="Required !" caption="Occupation" style-name="small" width="440px" _id="txtOccupation" :top="264px" :left="187px"></vaadin-text-field>
+
+     <vaadin-label style-name="small bold" size-auto plain-text :top="316px" :left="21px">
+       Current Health Status 
+     </vaadin-label>
+     <vaadin-option-group style-name="small horizontal" :top="308px" :left="187px">
+      <option>Good</option>
+      <option>Bad</option>
+     </vaadin-option-group>
+
+     <vaadin-text-field required-error="Required !" caption="Loan Agreement No" style-name="small" width="229px" _id="txtLoanAgreementNo" :top="373px" :left="21px"></vaadin-text-field>
+     <vaadin-text-field required-error="Required !" caption="Loan Amount" style-name="small" width="229px" _id="txtLoanAgreementNo1" :top="437px" :left="21px"></vaadin-text-field>
+     <vaadin-text-field required-error="Required !" caption="Loan Recovery Period" style-name="small" width="229px" _id="txtLoanAgreementNo11" :top="436px" :left="264px"></vaadin-text-field>
+     <vaadin-date-field caption="Loan Issue Date" date-format="dd-MMM-yyyy" style-name="small" width="150px" _id="dateDOB1" :top="435px" :left="506px"></vaadin-date-field>
+     <vaadin-text-field required-error="Required !" caption="Policy Period (Loan Period)" style-name="small" width="229px" _id="txtLoanAgreementNo12" :top="506px" :left="21px"></vaadin-text-field>
+     <vaadin-text-field required-error="Required !" caption="Bank Code" style-name="small" width="114px" _id="txtLoanAgreementNo121" :top="573px" :left="21px"></vaadin-text-field>
+     <vaadin-text-field required-error="Required !" caption="Bank Name" style-name="small" width="291px" _id="txtLoanAgreementNo1211" :top="572px" :left="149px"></vaadin-text-field>
+     <vaadin-text-field required-error="Required !" caption="Bank Branch Code" style-name="small" width="114px" _id="txtLoanAgreementNo1212" :top="572px" :left="454px"></vaadin-text-field>
+     <vaadin-text-field required-error="Required !" caption="Bank Branch Name" style-name="small" width="291px" _id="txtLoanAgreementNo12111" :top="571px" :left="591px"></vaadin-text-field>
+     <vaadin-date-field caption="Authorization Date" date-format="dd-MMM-yyyy" style-name="small" width="150px" _id="dateDOB2" :top="637px" :left="21px"></vaadin-date-field>
+     <vaadin-button style-name="friendly small" plain-text :top="688px" :left="947px">
+       Save 
+     </vaadin-button>
+    </vaadin-absolute-layout>
+   </vaadin-panel>
+  </vaadin-absolute-layout>
+ </body>
+</html>

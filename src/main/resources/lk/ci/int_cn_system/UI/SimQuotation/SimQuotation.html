@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;GENERATE_GETTERS&quot;:false,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;mytheme&quot;}">
+  <meta name="vaadin-version" content="7.7.7">
+  <meta name="package-mapping" content="com_vaadin:com.vaadin">
+ </head>
+ <body>
+  <vaadin-absolute-layout>
+   <vaadin-tab-sheet width="1063px" height="477px" :top="89px" :left="23px">
+    <tab caption="Quotation" selected>
+     <vaadin-panel size-full>
+      <vaadin-absolute-layout height="407.08%">
+       <vaadin-label style-name="bold" width="149px" plain-text :top="11px" :left="18px">
+         Policy Details 
+       </vaadin-label>
+       <vaadin-combo-box required-error="Required !" caption="Type of Cover" required input-prompt="" style-name="small" width="238px" _id="comboCoverType" :top="59px" :left="18px"></vaadin-combo-box>
+       <vaadin-combo-box required-error="Required !" caption="Policy Category" required style-name="small" width="150px" _id="comboPolCategory" :top="59px" :left="270px"></vaadin-combo-box>
+       <vaadin-combo-box required-error="Required !" caption="Usage" required style-name="small" width="223px" _id="comboPolUsage" :top="126px" :left="18px"></vaadin-combo-box>
+       <vaadin-combo-box required-error="Required !" caption="Product" required style-name="small" width="373px" _id="comboProduct" :top="126px" :left="256px"></vaadin-combo-box>
+       <vaadin-combo-box required-error="Required !" caption="Package Name" required style-name="small" width="150px" _id="comboPePackageName" :top="126px" :left="643px"></vaadin-combo-box>
+       <vaadin-combo-box required-error="Required !" caption="Issued Location" required style-name="small" width="150px" _id="comboLocation" :top="193px" :left="181px"></vaadin-combo-box>
+       <vaadin-combo-box required-error="Required !" caption="Period of Cover" required style-name="small" width="150px" _id="comboPeriodOfCover" :top="126px" :left="806px"></vaadin-combo-box>
+       <vaadin-date-field caption="Expire Date" date-format="dd-MMM-yyyy" style-name="small" width="150px" _id="dateExpireDate" :top="193px" :left="18px"></vaadin-date-field>
+       <vaadin-label style-name="bold" width="149px" plain-text :top="251px" :left="18px">
+         Vehicle Details 
+       </vaadin-label>
+       <vaadin-option-group style-name="horizontal small" _id="optionGroupRegNonReg" :top="279px" :left="18px">
+        <option>Registered</option>
+        <option>Non-Registered</option>
+       </vaadin-option-group>
+       <vaadin-combo-box caption="Province" style-name="small" width="90px" _id="comboVehProv" :top="340px" :left="18px">
+        <option>WP</option>
+        <option>SP</option>
+        <option>CP</option>
+        <option>NP</option>
+        <option>NC</option>
+        <option>NW</option>
+        <option>EP</option>
+        <option>SG</option>
+        <option>UP</option>
+       </vaadin-combo-box>
+       <vaadin-text-field caption="Vehicle No" style-name="small" width="90px" _id="txtVehLett" :top="340px" :left="108px"></vaadin-text-field>
+       <vaadin-text-field style-name="small" width="90px" _id="txtVehNos" :top="340px" :left="198px"></vaadin-text-field>
+       <vaadin-text-field caption="Engine Number" style-name="small" width="224px" _id="txtEngineNo" :top="340px" :left="573px"></vaadin-text-field>
+       <vaadin-text-field caption="Chassis Number" style-name="small" width="228px" _id="txtChassis" :top="340px" :left="331px"></vaadin-text-field>
+       <vaadin-text-field required-error="Required !" caption="Sum Insured" required style-name="small" width="150px" _id="txtSumInsured" :top="403px" :left="18px"></vaadin-text-field>
+       <vaadin-table selectable caption="Perils" width="1020px" height="669px" _id="tablePerils" :top="469px" :left="18px"></vaadin-table>
+       <vaadin-button style-name="danger" width="104px" plain-text _id="buttonClear" :top="1715px" :right="316px" :left="933px">
+         Clear 
+       </vaadin-button>
+       <vaadin-button icon="fonticon://FontAwesome/f0c7" style-name="primary" width="150px" plain-text _id="buttonSaveQuotation" :top="1715px" :left="768px">
+         Save &amp; Print 
+       </vaadin-button>
+       <vaadin-table selectable caption="Payment Lines" width="1019px" height="302px" _id="tablePmtLine" :top="1210px" :left="18px"></vaadin-table>
+       <vaadin-button style-name="friendly" width="214px" height="26px" plain-text _id="buttonCalTotalPre" :top="1155px" :left="824px">
+         Checkout Premium 
+       </vaadin-button>
+       <vaadin-button visible="false" icon="fonticon://FontAwesome/f002" style-name="friendly" plain-text _id="buttonSearchByVehicle" :top="831px" :left="615px">
+         Check Existing 
+       </vaadin-button>
+       <vaadin-label style-name="textRight small" size-auto plain-text _id="labelLoadedQuoNo" :top="11px" :left="171px"></vaadin-label>
+       <vaadin-label size-auto plain-text :top="1547px" :left="670px">
+         Default Net Rate 
+       </vaadin-label>
+       <vaadin-label size-auto plain-text :top="1664px" :left="670px">
+         Total Premium 
+       </vaadin-label>
+       <vaadin-label size-auto plain-text :top="1586px" :left="670px">
+         Net Premium 
+       </vaadin-label>
+       <vaadin-label size-auto plain-text :top="1624px" :left="670px">
+         Calculated Net Rate 
+       </vaadin-label>
+       <vaadin-label size-auto plain-text _id="lblTotPremium" :top="1664px" :left="834px">
+         0.00 
+       </vaadin-label>
+       <vaadin-label size-auto plain-text _id="lblCalNetRate" :top="1624px" :left="834px">
+         0.00 
+       </vaadin-label>
+       <vaadin-label size-auto plain-text _id="lblNetPremium" :top="1586px" :left="834px">
+         0.00 
+       </vaadin-label>
+       <vaadin-label size-auto plain-text _id="lblDefNetRate" :top="1547px" :left="834px">
+         0.00 
+       </vaadin-label>
+       <vaadin-button icon="fonticon://FontAwesome/f021" style-name="primary tiny" plain-text _id="btnCalculatePerils" :top="402px" :left="198px">
+         Calculate Perils 
+       </vaadin-button>
+       <vaadin-combo-box required-error="Required !" caption="Vehicle Type" required visible="false" style-name="small" width="161px" _id="comboVehType" :top="402px" :left="482px"></vaadin-combo-box>
+       <vaadin-text-field required-error="Required !" caption="Seat Count" required visible="false" style-name="small" width="103px" _id="txtSeatCount" :top="402px" :left="379px"></vaadin-text-field>
+      </vaadin-absolute-layout>
+     </vaadin-panel>
+    </tab>
+    <tab caption="Customer Details">
+     <vaadin-panel size-full>
+      <vaadin-panel size-full>
+       <vaadin-absolute-layout height="252.06%">
+        <vaadin-label style-name="bold" width="149px" plain-text :top="10px" :left="21px">
+          Customer Details 
+        </vaadin-label>
+        <vaadin-text-field caption="NIC" style-name="small" width="150px" _id="txtNIC" :top="63px" :left="21px"></vaadin-text-field>
+        <vaadin-text-field caption="Mobile No" style-name="small" width="150px" _id="txtMobile" :top="63px" :left="184px"></vaadin-text-field>
+        <vaadin-text-field required-error="Required !" caption="Initial Name" style-name="small" width="313px" _id="txtCusInitName" :top="131px" :left="21px"></vaadin-text-field>
+        <vaadin-text-field required-error="Required !" caption="Last Name" style-name="small" width="311px" _id="txtCusLastName" :top="131px" :left="348px"></vaadin-text-field>
+        <vaadin-text-field caption="Address No" style-name="small" width="134px" _id="txtCusAddressNo" :top="200px" :left="21px"></vaadin-text-field>
+        <vaadin-text-field caption="Street" style-name="small" width="369px" _id="txtCusStreet" :top="200px" :left="167px"></vaadin-text-field>
+        <vaadin-text-field caption="Area" style-name="small" width="183px" _id="txtCusArea" :top="200px" :left="548px"></vaadin-text-field>
+        <vaadin-combo-box required-error="City Required" caption="City" required style-name="small" width="296px" _id="comboCusCity" :top="261px" :left="21px">
+         <option>Option 1</option>
+         <option>Option 2</option>
+         <option>Option 3</option>
+        </vaadin-combo-box>
+        <vaadin-combo-box required-error="Required !" caption="Make &amp; Model" required style-name="small" width="267px" _id="comboMakeModel" :top="364px" :left="184px"></vaadin-combo-box>
+        <vaadin-label style-name="bold" size-auto plain-text :top="314px" :left="21px">
+          Additional Vehicle Details 
+        </vaadin-label>
+        <vaadin-label style-name="bold" size-auto plain-text :top="754px" :left="21px">
+          Cover Note Reason 
+        </vaadin-label>
+        <vaadin-table selectable width="579px" height="230px" _id="tableCNReason" :top="776px" :left="21px"></vaadin-table>
+        <vaadin-button icon="fonticon://FontAwesome/f0c7" style-name="primary" plain-text _id="buttonSaveCvrNote" :top="1042px" :left="881px">
+          Save 
+        </vaadin-button>
+        <vaadin-date-field caption="Start Date" date-format="dd-MMM-yyyy" style-name="small" width="150px" _id="dateStartDate" :top="463px" :left="21px"></vaadin-date-field>
+        <vaadin-label style-name="bold" size-auto plain-text :top="419px" :left="21px">
+          Cover Note 
+        </vaadin-label>
+        <vaadin-date-field caption="End Date" date-format="dd-MMM-yyyy" style-name="small" width="150px" _id="dateEndDate" :top="463px" :left="184px"></vaadin-date-field>
+        <vaadin-combo-box required-error="Required !" caption="Manufactured Year" required style-name="small" width="150px" _id="comboYOM" :top="364px" :left="21px"></vaadin-combo-box>
+        <vaadin-label style-name="bold" size-auto plain-text :top="518px" :left="21px">
+          Document Uploader 
+        </vaadin-label>
+        <vaadin-combo-box caption="Document Name" style-name="small" width="273px" _id="comboDocumentName" :top="564px" :left="21px">
+         <option>Valuation Report</option>
+         <option>Policy Proposal</option>
+        </vaadin-combo-box>
+        <vaadin-upload style-name="small" _id="uploadDocument" :top="560px" :left="334px"></vaadin-upload>
+        <vaadin-table selectable width="550px" height="116px" _id="tableDocumentUpload" :top="612px" :left="21px"></vaadin-table>
+       </vaadin-absolute-layout>
+      </vaadin-panel>
+     </vaadin-panel>
+    </tab>
+   </vaadin-tab-sheet>
+   <vaadin-label style-name="large bold" size-auto plain-text :top="26px" :left="24px">
+     Motor Quotation 
+   </vaadin-label>
+   <vaadin-text-field input-prompt="Search Quotation" style-name="tiny" width="191px" _id="txtQuotationNo" :top="55px" :left="800px"></vaadin-text-field>
+   <vaadin-button icon="fonticon://FontAwesome/f002" style-name="primary tiny" width="15px" height="30px" plain-text _id="btnQuotationSearch" :top="53px" :left="1003px"></vaadin-button>
+  </vaadin-absolute-layout>
+ </body>
+</html>

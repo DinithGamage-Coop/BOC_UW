@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;GENERATE_GETTERS&quot;:false,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;mytheme&quot;}">
+  <meta name="vaadin-version" content="7.7.7">
+ </head>
+ <body>
+  <vaadin-absolute-layout height="1002px">
+   <vaadin-panel size-full :top="0px">
+    <vaadin-absolute-layout width="99.92%" height="165%">
+     <vaadin-table selectable width="1040px" height="522px" _id="tableDataView" :top="540px" :left="33px"></vaadin-table>
+     <vaadin-option-group caption="Status" style-name="horizontal" width-full _id="optionStatus" :top="358px" :right="504px" :left="59px">
+      <option>Active</option>
+      <option>InActive</option>
+     </vaadin-option-group>
+     <vaadin-label caption-as-html icon="fonticon://FontAwesome/f0c0" caption="<h2><b>Channel Hierarchy</b></h2>" size-auto plain-text :top="77px" :left="46px">
+       This form is to define channel hierarchy details. 
+     </vaadin-label>
+     <vaadin-text-area caption="InActive Reason" input-prompt="Exchange rate Inactive reason" width="572px" height="136px" _id="textAreaInActiveReason" :top="256px" :left="530px"></vaadin-text-area>
+     <vaadin-text-field icon="fonticon://FontAwesome/f002" caption="Search" width="195px" height="34px" _id="textFieldSearchTable" :top="488px" :left="878px"></vaadin-text-field>
+     <vaadin-button style-name="danger" plain-text _id="buttonCancel" :top="402px" :left="878px">
+       Cancel 
+     </vaadin-button>
+     <vaadin-button style-name="primary" plain-text _id="buttonSave" :top="402px" :left="992px">
+       Save 
+     </vaadin-button>
+     <vaadin-text-field caption="Channel Level :" required input-prompt="Exchange channel level" width="305px" _id="textFieldChannelLevel" :top="256px" :left="59px"></vaadin-text-field>
+     <vaadin-combo-box caption="Channel Type :" required input-prompt="Select channel type" width="305px" _id="comboBoxSelectChannelType" :top="159px" :left="59px"></vaadin-combo-box>
+     <vaadin-combo-box caption="Sales Ofﬁcer Type :" required input-prompt="Select sales ofﬁcer type" width="305px" _id="comboBoxSelectSalesOfﬁcerType" :top="159px" :left="530px"></vaadin-combo-box>
+    </vaadin-absolute-layout>
+   </vaadin-panel>
+  </vaadin-absolute-layout>
+ </body>
+</html>

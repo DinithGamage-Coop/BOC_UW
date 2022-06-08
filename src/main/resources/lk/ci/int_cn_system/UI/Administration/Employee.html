@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;GENERATE_GETTERS&quot;:false,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;mytheme&quot;}">
+  <meta name="vaadin-version" content="7.7.7">
+ </head>
+ <body>
+  <vaadin-absolute-layout height="600px">
+   <vaadin-label size-auto plain-text _id="lblCustomer" :top="65px" :left="31px">
+     This form is to define Location details. 
+   </vaadin-label>
+   <vaadin-tab-sheet style-name="framed equal-width-tabs" width="1056px" height="455px" :top="108px" :left="31px">
+    <tab caption="Basic Information" selected>
+     <vaadin-panel height="1189px">
+      <vaadin-absolute-layout height="98.68%">
+       <vaadin-option-group caption="Local Entity" style-name="horizontal" _id="optgrpLocalEntity" :top="34px" :left="25px">
+        <option>Yes</option>
+        <option>No</option>
+       </vaadin-option-group>
+       <vaadin-combo-box caption="Title" width="314px" _id="cmbTitle" :top="173px" :left="25px"></vaadin-combo-box>
+       <vaadin-text-field caption="Last Name" width="314px" _id="txtLastName" :top="173px" :left="690px"></vaadin-text-field>
+       <vaadin-text-field caption="Other Name(s)" width="474px" _id="txtOtherName" :top="247px" :left="530px"></vaadin-text-field>
+       <vaadin-combo-box caption="Department" width="314px" _id="cmbDepartment" :top="389px" :left="358px"></vaadin-combo-box>
+       <vaadin-combo-box caption="Department Head" width="314px" _id="cmbDepartmentHead" :top="388px" :left="690px"></vaadin-combo-box>
+       <vaadin-combo-box caption="Designation" width="314px" _id="cmbDesignation" :top="390px" :left="25px"></vaadin-combo-box>
+       <vaadin-date-field caption="Date of Appointment" width="314px" _id="dateDateOfAppointment" :top="536px" :left="25px"></vaadin-date-field>
+       <vaadin-option-group caption="Status" style-name="horizontal" _id="optgrpStatus" :top="1062px" :left="25px">
+        <option>Active</option>
+        <option>Inactive</option>
+       </vaadin-option-group>
+       <vaadin-option-group caption="Assigned To Sales" style-name="horizontal" _id="optgrpAssignedToSales" :top="34px" :left="358px">
+        <option>Yes</option>
+        <option>No</option>
+       </vaadin-option-group>
+       <vaadin-combo-box caption="Office Location" width="314px" _id="cmbOfficeLocation" :top="99px" :left="25px"></vaadin-combo-box>
+       <vaadin-text-field caption="Initials" width="314px" _id="txtInitials" :top="173px" :left="358px"></vaadin-text-field>
+       <vaadin-text-field caption="Full Name" width="481px" _id="txtFullName" :top="247px" :left="25px"></vaadin-text-field>
+       <vaadin-option-group caption="Gender" style-name="horizontal" _id="optgrpGender" :top="323px" :left="25px">
+        <option>Male</option>
+        <option>Female</option>
+       </vaadin-option-group>
+       <vaadin-text-field caption="Email Address" width="481px" _id="txtEmail" :top="463px" :left="25px"></vaadin-text-field>
+       <vaadin-date-field caption="Date of Retirement" width="314px" _id="dateDateOfRetirement" :top="535px" :left="358px"></vaadin-date-field>
+       <vaadin-text-field caption="EPF No." width="314px" _id="txtEpf" :top="99px" :left="358px"></vaadin-text-field>
+       <vaadin-text-field caption="NIC No." width="314px" _id="txtNIC" :top="610px" :left="25px"></vaadin-text-field>
+       <vaadin-upload caption="NIC File" width="333px" _id="upNicFile" :top="610px" :left="358px"></vaadin-upload>
+       <vaadin-text-field caption="Driving License No." width="314px" _id="txtDLNumber" :top="685px" :left="25px"></vaadin-text-field>
+       <vaadin-upload caption="Driving License File" _id="upDLFile" :top="684px" :left="358px"></vaadin-upload>
+       <vaadin-text-field caption="Passport No." width="314px" _id="txtPassportNumber" :top="760px" :left="25px"></vaadin-text-field>
+       <vaadin-date-field caption="Passport Issued Date" width="314px" _id="datePassportIssuedDate" :top="759px" :left="358px"></vaadin-date-field>
+       <vaadin-upload caption="Passport File" _id="upPassportFile" :top="758px" :left="690px"></vaadin-upload>
+       <vaadin-date-field caption="Date of Birth" width="314px" _id="dateDOB" :top="840px" :left="25px"></vaadin-date-field>
+       <vaadin-combo-box caption="Ethnicity" width="314px" _id="cmbEthnicity" :top="916px" :left="25px">
+        <option>Option 1</option>
+        <option>Option 2</option>
+        <option>Option 3</option>
+       </vaadin-combo-box>
+       <vaadin-combo-box caption="Marital Status" width="314px" _id="cmbMaritalStatus" :top="915px" :left="358px">
+        <option>Option 1</option>
+        <option>Option 2</option>
+        <option>Option 3</option>
+       </vaadin-combo-box>
+       <vaadin-combo-box caption="Religion" width="314px" _id="cmbReligion" :top="914px" :left="690px">
+        <option>Option 1</option>
+        <option>Option 2</option>
+        <option>Option 3</option>
+       </vaadin-combo-box>
+       <vaadin-combo-box caption="Preferred Language" width="314px" _id="cmbPreferredLanguage" :top="989px" :left="25px">
+        <option>Option 1</option>
+        <option>Option 2</option>
+        <option>Option 3</option>
+       </vaadin-combo-box>
+       <vaadin-button style-name="friendly" width="83px" plain-text _id="btnUpdateBasicInformation" :top="1096px" :left="922px">
+         Update 
+       </vaadin-button>
+      </vaadin-absolute-layout>
+     </vaadin-panel>
+    </tab>
+    <tab caption="Contact Numbers">
+     <vaadin-panel size-full>
+      <vaadin-absolute-layout height="699px">
+       <vaadin-text-field caption="Country Code" width="230px" _id="txtCountryCodeMobile" :top="50px" :left="275px"></vaadin-text-field>
+       <vaadin-text-field caption="Contact Number" width="230px" _id="txtMobileNumber" :top="50px" :left="530px"></vaadin-text-field>
+       <vaadin-text-field caption="Country Code" width="230px" _id="txtCountryCodeLand" :top="125px" :left="275px"></vaadin-text-field>
+       <vaadin-text-field caption="Contact Number" width="230px" _id="txtLandLine" :top="125px" :left="530px"></vaadin-text-field>
+       <vaadin-text-field caption="Country Code" width="230px" _id="txtCountryCodeFax" :top="200px" :left="275px"></vaadin-text-field>
+       <vaadin-text-field caption="Contact Number" width="230px" _id="txtFax" :top="200px" :left="530px"></vaadin-text-field>
+       <vaadin-combo-box caption="Contact Type" width="230px" _id="cmbContactTypeOther" :top="275px" :left="20px">
+        <option>Option 1</option>
+        <option>Option 2</option>
+        <option>Option 3</option>
+       </vaadin-combo-box>
+       <vaadin-text-field caption="Country Code" width="230px" _id="txtCountryCodeAdd" :top="275px" :left="275px"></vaadin-text-field>
+       <vaadin-text-field caption="Contact Number" width="230px" _id="txtContactNoOther" :top="275px" :left="530px"></vaadin-text-field>
+       <vaadin-button style-name="primary" width="65px" plain-text _id="btnAddContactNo" :top="275px" :left="785px">
+         Add 
+       </vaadin-button>
+       <vaadin-table selectable width="997px" height="195px" _id="tblEmployeeContactNoTable" :top="350px" :left="20px"></vaadin-table>
+       <vaadin-combo-box caption="Contact Type" width="230px" _id="cmbContactTypeMobile" :top="50px" :left="20px">
+        <option>Option 1</option>
+        <option>Option 2</option>
+        <option>Option 3</option>
+       </vaadin-combo-box>
+       <vaadin-combo-box caption="Contact Type" width="230px" _id="cmbContactTypeLand" :top="125px" :left="20px">
+        <option>Option 1</option>
+        <option>Option 2</option>
+        <option>Option 3</option>
+       </vaadin-combo-box>
+       <vaadin-combo-box caption="Contact Type" width="230px" _id="cmbContactTypeFax" :top="200px" :left="20px">
+        <option>Option 1</option>
+        <option>Option 2</option>
+        <option>Option 3</option>
+       </vaadin-combo-box>
+       <vaadin-button style-name="friendly" width="83px" plain-text _id="btnUpdateContactNumbers" :top="587px" :left="935px">
+         Update 
+       </vaadin-button>
+       <vaadin-label size-auto plain-text _id="lblContactId" :top="287px" :left="896px"></vaadin-label>
+      </vaadin-absolute-layout>
+     </vaadin-panel>
+    </tab>
+    <tab caption="Address Details">
+     <vaadin-panel height="510px">
+      <vaadin-absolute-layout>
+       <vaadin-combo-box caption="Address Type" width="230px" _id="cmbAddressType" :top="50px" :left="20px"></vaadin-combo-box>
+       <vaadin-combo-box caption="City" width="230px" _id="cmbCity" :top="50px" :left="270px"></vaadin-combo-box>
+       <vaadin-text-field caption="Address No" width="150px" _id="txtAddressNo" :top="125px" :left="20px"></vaadin-text-field>
+       <vaadin-text-field caption="Address Street" width="230px" _id="txtAddressStreet" :top="125px" :left="185px"></vaadin-text-field>
+       <vaadin-text-field caption="Address Village" width="230px" _id="txtAddressVillage" :top="125px" :left="432px"></vaadin-text-field>
+       <vaadin-text-field caption="Address Area" width="230px" _id="txtAddressArea" :top="125px" :left="677px"></vaadin-text-field>
+       <vaadin-button style-name="primary" width="65px" plain-text _id="btnAddAddress" :top="125px" :left="931px">
+         Add 
+       </vaadin-button>
+       <vaadin-table selectable width="992px" height="195px" _id="tblEmployeeAddressTable" :top="200px" :left="20px"></vaadin-table>
+       <vaadin-combo-box caption="Coutry" width="230px" _id="cmbCountry" :top="50px" :left="519px"></vaadin-combo-box>
+       <vaadin-button style-name="friendly" width="83px" plain-text _id="btnSave" :top="424px" :left="831px"></vaadin-button>
+       <vaadin-button style-name="danger" width="83px" plain-text _id="btnCancel" :top="424px" :left="931px">
+         Cancel 
+       </vaadin-button>
+       <vaadin-label size-auto plain-text _id="lblAddressId" :top="54px" :left="792px"></vaadin-label>
+      </vaadin-absolute-layout>
+     </vaadin-panel>
+    </tab>
+   </vaadin-tab-sheet>
+  </vaadin-absolute-layout>
+ </body>
+</html>

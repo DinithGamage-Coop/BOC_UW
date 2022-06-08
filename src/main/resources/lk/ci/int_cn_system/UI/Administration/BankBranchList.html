@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;GENERATE_GETTERS&quot;:false,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;mytheme&quot;}">
+  <meta name="vaadin-version" content="7.7.7">
+ </head>
+ <body>
+  <vaadin-absolute-layout height="590px">
+   <vaadin-button style-name="primary" width="140px" height="40px" plain-text _id="btnCreateNewBankBranch" :top="20px" :right="25px">
+     Create New 
+   </vaadin-button>
+   <vaadin-label size-auto plain-text :top="65px" :left="31px">
+     This is to show Bank Branch List. 
+   </vaadin-label>
+   <vaadin-text-field caption="Search" width-full _id="txtFieldSearchBankBranch" :top="120px" :right="25px" :left="850px"></vaadin-text-field>
+   <vaadin-table selectable responsive size-full _id="tblBankBranchList" :top="173px" :right="25px" :bottom="25px" :left="31px"></vaadin-table>
+  </vaadin-absolute-layout>
+ </body>
+</html>
